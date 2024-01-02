@@ -13,7 +13,8 @@ try {
         core.setFailed(`Invalid branch name.\n`, "See convention.md for more details.\n");
         return;
     }
-    if (!regex.test(branchName)) {
+    const expression = new RegExp(regex);
+    if (!expression.test(branchName)) {
         core.setFailed(`Invalid branch name.\n`, "See convention.md for more details.\n");
         return;
     }
