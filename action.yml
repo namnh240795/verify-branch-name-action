@@ -1,12 +1,9 @@
 name: '@namnh240795/verify-branch-name-action'
 description: 'Verify branch name follow a certain rule'
 inputs:
-  github-token:
-    description: 'Github token'
-    required: true
   regex:
     description: 'Branch name regex'
-    required: false
+    required: true
 outputs:
   pass: # id of output
     description: 'Verify Branch Name pass or not'
