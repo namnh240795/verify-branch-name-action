@@ -4,11 +4,9 @@ This action gonna check the commit lint of the pull request
 
 ## Inputs
 
-### `github-token`
+### `regex`
 
-**Required** Github token
-
-### `maximum-commit-number`
+**Required** Branch Regex
 
 ## Outputs
 
@@ -19,7 +17,11 @@ Commit lint pass or not
 ## Example usage
 
 ```yaml
-uses: @namnh240795/verify-commit-message-action@v1.12
-with:
-  github-token: ${{ secrets.GITHUB_TOKEN }}
+verify-branch-name:
+    name: Verify Branch Name
+    runs-on: ubuntu-latest
+    steps:
+        - uses: namnh240795/verify-branch-name-action@v1.1.0
+            with:
+                regex: production
 ```
