@@ -1,7 +1,3 @@
-# Inspired by https://github.com/hunghg255/verify-commit-msg
-
-This action gonna check the commit lint of the pull request
-
 ## Inputs
 
 ### `regex`
